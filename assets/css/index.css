@@ -1,0 +1,355 @@
+header{
+    width: 100%;
+    height: 100vh;
+    color: var(--bg);
+    background: var(--text);
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header_text{
+    position: absolute;
+    z-index: 1;
+    padding: 5%;
+}
+
+.header_text h2{
+    font-size: 5vw;
+    color: var(--gray);
+}
+
+.header_text h2 span{
+    color: var(--index);
+}
+
+.header_text p{
+    width: 40%;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 20px 0;
+}
+
+.modal_show_btn {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.reg_btn{
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin-right: 30px;
+    margin-top: 20px;
+    background: var(--index);
+    border: 3px solid var(--index);
+    transition: ease-out 0.3s;
+}
+
+.reg_btn:hover{
+    background: var(--index1);
+    border-color: var(--index1);
+}
+
+.log_btn{
+    padding: 13px 0;
+    position: relative;
+}
+
+.log_btn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: var(--index);
+    pointer-events: none;
+    transform-origin: left;
+    transition: ease-out 0.3s;
+}
+
+.log_btn:hover::after{
+    transform: scaleX(0);
+}
+
+
+
+
+.slideshow {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.slides {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.slide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0;
+	pointer-events: none;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide--current {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.slide__title{
+    margin-left: auto;
+    margin-bottom: auto;
+    padding: 30px;
+    color: var(--index);
+}
+
+.slide__img {
+	position: absolute;
+	top: -200px;
+	left: -200px;
+	width: calc(100% + 400px);
+	height: calc(100% + 400px);
+	background-size: cover;
+	background-position: 50% 50%;
+    opacity: 0.3;
+}
+
+.slidenav {
+	position: absolute;
+    width: 100px;
+    height: 20px;
+    top: auto;
+    left: auto;
+    bottom: 20px;
+    right: 20px;
+	text-align: center;
+    color: var(--bg);
+}
+
+.slidenav__item {
+	border: 0;
+	outline: 0;
+	background: none;
+    color: var(--bg);
+    cursor: pointer;
+}
+
+.shape {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	fill: var(--color-shape-fill);
+	top: 0;
+	pointer-events: none;
+}
+
+
+
+
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: scale(0);
+    z-index: 10;
+    background: var(--text);
+    color: var(--bg);
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.modal_show{
+    transform: scale(1);
+}
+
+
+
+.modal_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
+    opacity: 0.1;
+}
+
+
+.modal form{
+    border: 3px solid var(--index);
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.modal form h4{
+    margin: 0 auto 10px auto;
+}
+
+.modal form input{
+    background: none;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 2px solid var(--index);
+    color: var(--bg);
+    font-size: 16px;
+    min-width: 250px;
+}
+
+.modal form input::placeholder{
+    color: var(--bg);
+}
+
+.modal form button{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: var(--index);
+    border: 2px solid var(--index);
+    border-radius: 50px;
+    font-weight: 700;
+    color: var(--bg);
+}
+
+.modal form button:hover{
+    background: transparent;
+}
+
+
+
+
+
+
+.checkmark_container {
+    margin: 10px 0;
+    padding-left: 30px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    width: 100%;
+}
+  
+.checkmark_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    padding: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    background-color: var(--bg);
+    border-radius: 100%;
+    transition: 0.2s;
+}
+  
+
+.checkmark_container:hover input ~ .checkmark {
+    background-color: var(--bg);
+}
+  
+.checkmark_container input:checked ~ .checkmark {
+    background-color: var(--index);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.close_modal_btn{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close_modal_btn span{
+    width: 40px;
+    height: 5px;
+}
+.close_modal_btn span:after,
+.close_modal_btn span:before{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    background: #e55555;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+.close_modal_btn:hover span:after{
+    transform: rotate(135deg);
+}
+
+.close_modal_btn span:after{
+    transform: rotate(-45deg);
+}
+
+
+
+
+@media screen and (max-width: 900px){
+    .header_text h2{
+        font-size: 30px;
+    }
+    .header_text p{
+        width: 85%;
+    }
+    .modal_show_btn{
+        margin-top: 20px;
+    }
+
+    .log_btn{
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    .modal_img{
+        width: auto;
+        height: 100%;
+    }
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="khan" />
+    <link rel="shortcut icon" type="image/png" href="./content/icons/shortcut.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/profile.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="menu_btn"><span></span>
+            <p>меню</p>
+        </div>
+        <div class="profile_btn"><span></span>
+            <p>профиль</p>
+        </div>
+        <div class="notification_btn"><span></span>
+            <p>уведомления</p>
+        </div>
+        <a href="./index.html" class="sing_out_btn"><span></span>
+            <p>выйти</p>
+        </a>
+    </nav>
+    <div class="side_bar_container">
+        <div class="side_bar">
+            <div class="menu">
+                <a href="./profile.html">Главная</a>
+                <a href="#meets">Мои встречи</a>
+                <a href="#accaunt">Мой аккаунт</a>
+                <a href="./find.html">Искать встречу</a>
+                <a href="./contact.html">Контакты</a>
+                <a href="./index.html">Выйти</a>
+            </div>
+            <div class="profile">
+                <div class="img_box">
+                    <img src="./content/images/p3.jpg" alt="avatar">
+                </div>
+                <div class="profile_data"></div>
+            </div>
+            <div class="notification">
+                <h4>Уведомления</h4>
+                <div class="notification_list">
+                    <div class="notification_item"></div>
+                    <div class="notification_item"></div>
+                    <div class="notification_item"></div>
+                    <div class="notification_item"></div>
+                    <div class="notification_item"></div>
+                </div>
+                <a href="./find.html" class="notification_link">новые встречи</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <a name="#accaunt" id="accaunt"></a>
+            <h2 class="section_title">Что из этого ваше?</h2>
+            <form action="" class="checkbox_container">
+                <label>
+                    <input type="checkbox" name="option1" value="c1">
+                    <span>Поесть</span>
+                </label>
+                <label class="last_label">
+                    <input type="checkbox" name="option1" value="c2">
+                    <span>Прогулка</span>
+                </label>
+                <label class="last_label">
+                    <input type="checkbox" name="option1" value="c3">
+                    <span>Достопримечательности</span>
+                </label>
+                <label class="last_label">
+                    <input type="checkbox" name="option1" value="c4">
+                    <span>Рандом</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c5">
+                    <span>Красота</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c6">
+                    <span>Развлечения</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c7">
+                    <span>Медицина</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c8">
+                    <span>Шопинг</span>
+                </label>
+                <label class="last_label">
+                    <input type="checkbox" name="option1" value="c9">
+                    <span>Спорт</span>
+                </label>
+                <label class="last_label">
+                    <input type="checkbox" name="option1" value="c10">
+                    <span>Образование</span>
+                </label>
+                <label class="last_label">
+                    <input type="checkbox" name="option1" value="c11">
+                    <span>Ремонт</span>
+                </label>
+                <label class="last_label">
+                    <input type="checkbox" name="option1" value="c12">
+                    <span>Религия</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c1">
+                    <span>Поесть</span>
+                </label>
+                <label class="last_label">
+                    <input type="checkbox" name="option1" value="c2">
+                    <span>Прогулка</span>
+                </label>
+                <label class="last_label">
+                    <input type="checkbox" name="option1" value="c3">
+                    <span>Достопримечательности</span>
+                </label>
+                <label class="last_label">
+                    <input type="checkbox" name="option1" value="c4">
+                    <span>Рандом</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c5">
+                    <span>Красота</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c6">
+                    <span>Развлечения</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c7">
+                    <span>Медицина</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c8">
+                    <span>Шопинг</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c9">
+                    <span>Спорт</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c10">
+                    <span>Образование</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c11">
+                    <span>Ремонт</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="option1" value="c12">
+                    <span>Религия</span>
+                </label>
+            </form>
+        </section>
+        <section>
+            <h2 class="section_title">Группа из n человек</h2>
+            <form class="range-slider">
+                <input value="1" min="1" max="20" step="1" type="range">
+                <input value="3" min="1" max="20" step="1" type="range">
+                <span class="rangeValues"></span>
+            </form>
+        </section>
+        <section>
+            <form id="theForm" class="simform" autocomplete="off">
+                <div class="simform-inner">
+                    <ol class="questions">
+                        <li>
+                            <span><label for="q1">Откуда вы родом?</label></span>
+                            <input id="q1" name="q1" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q2">Любимое кино?</label></span>
+                            <input id="q2" name="q2" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q3">Сколько вы будете еще в Москве?</label></span>
+                            <input id="q3" name="q3" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q4">Какой вид развлечений предпочитаете?</label></span>
+                            <input id="q4" name="q4" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q5">Любимая книга?</label></span>
+                            <input id="q5" name="q5" type="text" />
+                        </li>
+                        <li>
+                            <span><label for="q6">Ваша профессия?</label></span>
+                            <input id="q6" name="q6" type="text" />
+                        </li>
+                    </ol>
+                    <button class="submit" type="submit"></button>
+                    <div class="controls">
+                        <button class="next"></button>
+                        <div class="progress"></div>
+                        <span class="number">
+                            <span class="number-current"></span>
+                            <span class="number-total"></span>
+                        </span>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+                <span class="final-message"></span>
+            </form>
+        </section>
+        <section>
+            <a href="./find.html" class="go_to_find_btn">Найти друга</a>
+        </section>
+        <section class="profile_info">
+            <h2 class="section_title"></h2>
+            <div class="my_place_list">
+                <div class="my_place">
+                    <div class="img_box">
+                        <img src="./content/images/m1.jpeg" alt="place">
+                    </div>
+                    <p>Flacon</p>
+                    <a href="">Адрес</a>
+                    <a href="">Сходить</a>
+                </div>
+                <div class="my_place">
+                    <div class="img_box">
+                        <img src="./content/images/m2.jpg" alt="place">
+                    </div>
+                    <p>Парк Горького</p>
+                    <a href="">Адрес</a>
+                    <a href="">Сходить</a>
+                </div>
+                <div class="my_place">
+                    <div class="img_box">
+                        <img src="./content/images/m3.jpg" alt="place">
+                    </div>
+                    <p>ВДНХ</p>
+                    <a href="">Адрес</a>
+                    <a href="">Сходить</a>
+                </div>
+                <div class="my_place">
+                    <div class="img_box">
+                        <img src="./content/images/m4.jpg" alt="place">
+                    </div>
+                    <p>Гараж</p>
+                    <a href="">Адрес</a>
+                    <a href="">Сходить</a>
+                </div>
+                <a href="./find.html" class="my_place add_place_btn">добавить место</a>
+            </div>
+        </section>
+        <section class="meets_section">
+            <a name="#meets" id="meets"></a>
+            <h2 class="section_title">Ваши встречи</h2>
+            <div class="meets">
+                <div class="meet">
+                    <div class="img_box">
+                        <img src="./content/images/p1.jpg" alt="person">
+                    </div>
+                    <div class="text_box">
+                        <ul>
+                            <li><span>Ваш новый друг : </span> <h4>Дмитрий Толстолес</h4></li>
+                            <li><span>Статус : </span> Вас выбрали</li>
+                            <li><span>Дата встречи : </span> 23.03.2020</li>
+                            <li><span>Место встречи : </span> <a href="" class="place">Парк горького Крымский вал, 9 <img src="./content/images/m2.jpg" alt=""></a></li>
+                            <li><span>Номер телефона : </span> <a href="">+9683546850</a></li>
+                        </ul>
+                        <div class="contact_box">
+                            <div class="contact_links">
+                                <a href="">Cвязаться</a>
+                            </div>
+                            <div class="social_net">
+                                <a href=""><img src="./content/icons/facebook-logo.svg" alt="facebook"></a>
+                                <a href=""><img src="./content/icons/instagram-logo.svg" alt="instagram"></a>
+                                <a href=""><img src="./content/icons/whatsapp-logo.svg" alt="whatsapp"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meet">
+                    <div class="img_box">
+                        <img src="./content/images/p2.jpg" alt="person">
+                    </div>
+                    <div class="text_box">
+                        <ul>
+                            <li><span>Ваш новый друг : </span> <h4>Дмитрий Толстолес</h4></li>
+                            <li><span>Статус : </span> На рассмотрении</li>
+                            <li><span>Дата отклика : </span> 13.01.2020</li>
+                            <li><span>Рекомендации друга : </span> 
+                                <a href="" class="place">Гараж, <img src="./content/images/m4.jpg" alt=""></a>
+                                <a href="" class="place">ВДНХ, <img src="./content/images/m3.jpg" alt=""></a>
+                                <a href="" class="place">Дизайн-завод "Флакон" <img src="./content/images/m1.jpeg" alt=""></a>
+                            </li>
+                            <li><span>Номер телефона : </span> <a href="">+9683546850</a></li>
+                        </ul>
+                        <div class="contact_box">
+                            <div class="contact_links">
+                                <a href="">Cвязаться</a>
+                            </div>
+                            <div class="social_net">
+                                <a href=""><img src="./content/icons/facebook-logo.svg" alt="facebook"></a>
+                                <a href=""><img src="./content/icons/instagram-logo.svg" alt="instagram"></a>
+                                <a href=""><img src="./content/icons/whatsapp-logo.svg" alt="whatsapp"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="./assets/js/modernizr.custom.js"></script>
+    <script src="./assets/js/classie.js"></script>
+    <script src="./assets/js/stepsForm.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/profile.js"></script>
+</body>
+
+</html>

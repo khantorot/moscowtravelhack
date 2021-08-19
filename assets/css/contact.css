@@ -1,0 +1,23 @@
+.contact_box{
+    margin-bottom: 30px;
+}
+
+.contact_box h4{
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact_box a{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 0 5px 5px 0;
+    background: var(--gray);
+    transition: ease-out 0.3s;
+}
+
+
+
+.contact_box a:hover{
+    background: linear-gradient(20deg, var(--index), var(--index1));
+}
